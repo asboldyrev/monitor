@@ -7,8 +7,6 @@ services:
         pid: host
         privileged: true
         ports:
-          - "8181:8181"
+          - "8181:80"
         volumes:
-          - ./data.json:/app/storage/data.json
-          - ./.env:/app/.env
-          - ./config/monitor.php:/app/config/monitor.php
+          - ./json/:/usr/share/nginx/html/json/:ro
