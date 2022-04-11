@@ -4,8 +4,6 @@ services:
         image: asboldyrev/monitor
         container_name: monitor
         restart: unless-stopped
-        pid: host
-        privileged: true
         ports:
           - "8181:80"
         volumes:
