@@ -5,6 +5,7 @@ import python.memory as memory
 import python.average as average
 import python.filesystems as filesystems
 import python.docker as docker
+import python.utilization as utilization
 
 cpu_info = cpu.info()
 with open('./json/cpu.json', 'w') as file:
@@ -29,3 +30,7 @@ with open('./json/filesystems.json', 'w') as file:
 docker_info = docker.info()
 with open('./json/docker.json', 'w') as file:
     json.dump(docker_info, file)
+
+utilization_info = utilization.info()
+with open('./json/utilization.json', 'w') as file:
+    json.dump(utilization_info, file)
