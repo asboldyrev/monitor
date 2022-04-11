@@ -5,3 +5,4 @@ __pycache__
 /env
 
 /vue-app/node_modules
+release*.zip
