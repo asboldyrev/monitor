@@ -13,7 +13,7 @@ def info():
 		'total': total,
 		'used': used,
 		'free': free,
-		'percent': f"{percent} %",
+		'percent': percent,
 	}
 
 	return info
